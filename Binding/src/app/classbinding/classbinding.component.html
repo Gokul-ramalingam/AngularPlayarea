@@ -1,0 +1,18 @@
+<h3 class="text-success">
+  normal working of class attribute in html
+</h3>
+<h2 [class] = "classBinding">
+  Class Binding
+</h2>
+<h3 class="text-special" [class] = "classBinding">
+  When normal class atribute and class binding is added together.The class binding is taken and normal class attribute is left
+</h3>
+<h3 [class.text-danger]="hasError">
+ Apply class binding based on expression.for eg.,if error is there then it should be red
+</h3>
+<h3 [class.text-danger]="hasError">
+  Apply class binding based on expression.for eg.,if error is there then it should be red
+ </h3>
+ <h3 [ngClass]="messageClass">
+  ng class directive used to apply multiple class expression evaluation
+ </h3>

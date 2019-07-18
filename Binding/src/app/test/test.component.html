@@ -1,0 +1,22 @@
+<h3>
+  Property Binding <input [id] = "myId" type = "text" value = "Gokul">
+</h3>
+<h3>
+  Property Binding using interpolation :<input id = "{{myId}}" type = "text" value = "Gokul">
+</h3>
+<h3>
+  Property Binding for boolean does not work using interpolation :<input id = "{{myId}}" type = "text" value = "Gokul">
+</h3>
+<h3>
+  Property Binding for boolean does not work using interpolation :<input disabled = "{{false}}" id = "{{myId}}" type = "text" value = "Gokul"><br>
+  Property Binding for boolean does not work using interpolation :<input disabled = "{{true}}" id = "{{myId}}" type = "text" value = "Gokul">
+</h3>
+<h3>
+  Property Binding boolean without using interpolation works:<input [disabled] = "false" id = "{{myId}}" type = "text" value = "Gokul">
+</h3>
+<h3>
+  Property Binding for boolean without using interpolation works:<input [disabled] ="isDisabled" id = "{{myId}}" type = "text" value = "Gokul">
+</h3>
+<h3>
+  Alternate method for Property Binding eg., <u>bind -</u>id = "some value":<input  bind-id = "myId" type = "text" value = "Gokul">
+</h3>

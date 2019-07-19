@@ -1,0 +1,13 @@
+<h2>Department id is {{departmentId}}</h2>
+<p>
+    <button (click)='goOverview()'>Overview</button>
+    <button (click)= 'goContact()'>Contact</button>
+</p>
+<router-outlet></router-outlet>
+<p>
+<button (click)='goPrevious()'>Previous</button>
+<button (click)='goNext()'>Next</button>
+</p>
+<div>
+    <button (click) = "goBack()">Back</button>
+</div>

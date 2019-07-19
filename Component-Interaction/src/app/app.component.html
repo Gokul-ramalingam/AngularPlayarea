@@ -1,0 +1,7 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <h1>
+  {{ Message }}
+  </h1>
+</div>
+<app-component-interaction (childEvent) = "Message = $event" [parentData] = "name"></app-component-interaction>

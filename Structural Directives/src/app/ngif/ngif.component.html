@@ -1,0 +1,21 @@
+<h1>Type 1 of ngIf</h1>
+<h2 *ngIf = "true">Gokul</h2>
+<h2 *ngIf = "false">Gokul</h2>
+<h4>Type 2 of ngIf using property in class component</h4>
+<h2 *ngIf = "displayName">Gokul</h2>
+<br><br>
+<h1>Type 1 ngIfElse INLINE</h1>
+<h2 *ngIf = "displayName; else elseblock">Gokul</h2>
+<ng-template #elseblock>
+  <h2>
+    Name is hidden
+  </h2>
+</ng-template>
+<h1>Type 2 ngIfElse</h1>
+<div *ngIf = "displayName; then thenBlock ; else elseBlock"></div>
+<ng-template #thenBlock>
+ <h2>Gokul</h2>
+</ng-template>
+<ng-template #elseBlock>
+<h2>Hidden</h2>
+</ng-template> 

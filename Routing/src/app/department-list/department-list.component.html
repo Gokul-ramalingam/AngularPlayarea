@@ -1,0 +1,6 @@
+<h2>Department List</h2>
+  <ul class="items">
+    <li (click)="onSelect(department)" [class.selected]  ='isSelected(department)' *ngFor ='let department of departments'>
+      <span class="badge">{{department.id}} </span>&nbsp;&nbsp;{{department.name}}
+    </li>
+  </ul>
